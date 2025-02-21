@@ -1,0 +1,159 @@
+
+  
+  /* SIGN UP FORM CSS */
+
+.signup-pg-background{
+    background-image: url(/images/background-image/arrangement-black-friday-elements-with-copy-space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.signup-form-container{
+    max-width: 500px;
+    background-color: var(--base-background-default);
+    color: var(--base-text);
+    margin: 100px auto;
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+}
+
+/* Header */
+
+.signup-pg-header .flex {
+    padding-left: 2rem;
+}
+
+.signup-pg-header .flex h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.signup-pg-header  p {
+    margin: 1rem 0 1.2rem;
+}
+
+.close-btn {
+    width: unset;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+.close-btn-svg{
+    width: 24px;
+    height: 24px;
+}
+
+/* form */
+
+input[type="password"]::placeholder {
+    text-align: end;
+    color: inherit;
+}
+
+.signup-form label {
+    display: block;
+}
+
+.signup-form label::after{
+    content: "*";
+    color: var(--base-validation-error);
+}
+
+
+.password-auth-btn-container {
+    margin-bottom: 1.8rem;
+}
+
+input[type="checkbox"] {
+   margin-right: 0.2rem;
+   width: 20px;
+   height: 20px;
+   vertical-align: bottom;
+  }
+
+#label-remember-me {
+    display: inline-block;
+}
+
+#label-remember-me::after{
+    content: "";
+}
+
+
+.forgot-pass-btn {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signup-form input[ type="email"],
+.signup-form input[ type="password"],
+.sign-in-btn,
+.create-member-btn,
+.membership-btn {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.2rem 0 1rem;
+    border: 1px solid var(--base-border-color);
+    height: 50px;
+
+}
+
+.sign-in-btn {
+    background-color: #222222;
+    color: var(--base-primary-reverse-text);
+    font-size: 1rem;
+}
+
+.sign-in-btn:hover {
+    background-color: var(--footer-hover);
+}
+
+.create-member-btn{
+    background: transparent;
+    color: var(--base-text);
+    border: 1px solid #222222;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.membership-btn {
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    margin: -1rem 0 0;
+    font-size: 0.82rem;
+ }
+input [type="checkbox"],
+.sign-in-btn,
+.create-member-btn,
+.membership-btn {
+    cursor: pointer;
+}
+
+@media only screen and (max-width:400px)  {
+    .password-auth-btn-container .flex {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    input[type="checkbox"] {
+        width: 0.8rem;
+        height: 0.8rem;
+        vertical-align: middle;
+       }
+
+    .remember-me-btn,
+    .forgot-pass-btn{
+        border: 1px solid var(--base-border-color);
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem;
+    }   
+
+   
+
+}

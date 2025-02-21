@@ -1,0 +1,70 @@
+:root {
+    --base-background-default: #faf9f8;
+    --base-text: #222222;
+    --base-primary-reverse-text: #fff;
+    --base-brand-logo: #e50010;
+    --base-background-footer: #e4e4e4;
+    --base-secondary-interactive-active: #e50010;
+    --base-secondary-interactive-hover: #e50010;
+    --base-background-row-hover: #e6e6e6;
+    --footer-hover: #555555;
+    --base-validation-error: #d6001c;
+    --base-border-color: #d0d0d0;
+  }
+/* ---------LAYOUT----------- */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 1em;
+  
+}
+
+/* SVG & IMAGES*/
+
+span svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Text Sizez */
+ 
+/* 0.950rem = 15.2px */
+.md-text{
+    font-size: 0.950rem;
+}
+
+/* 0.8125rem = 13px */
+.sm-text {
+    font-size: 0.8125rem;
+}
+
+/* 0.6875rem = 11px */
+.xsm-text{
+    font-size: 0.6875rem;
+}
+
+.text-center{
+    text-align: center;
+}

@@ -1,0 +1,519 @@
+@import url(https://db.onlinewebfonts.com/c/70f3e46b3bb904260d1b1a6e0f2edf08?family=HM+Sans+Regular);
+
+:root {
+  --base-background-default: #faf9f8;
+  --base-text: #222222;
+  --base-primary-reverse-text: #fff;
+  --base-brand-logo: #e50010;
+  --base-background-footer: #e4e4e4;
+  --base-secondary-interactive-active: #e50010;
+  --base-secondary-interactive-hover: #e50010;
+  --base-background-row-hover: #e6e6e6;
+  --footer-hover: #555555;
+  --base-validation-error: #d6001c;
+  --base-border-color: #d0d0d0;
+  --base-light-text-color: #707070;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--base-background-default);
+  font-family: "HM Sans Regular";
+  overflow-x: hidden;
+}
+
+button,
+input {
+  font-family: "HM Sans Regular";
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--base-text);
+  text-decoration: none;
+}
+
+/* -------------NAVBAR-----------------*/
+
+.header {
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  margin: 1rem 0 2rem;
+  font-size: 0.873rem;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 0.75rem;
+}
+
+.ellipses-button {
+  margin-left: 0.625rem;
+}
+
+.ellipses-button :hover {
+  fill: var(--base-secondary-interactive-hover);
+}
+
+.nav-hm-logo {
+  height: 2.6rem;
+  color: var(--base-brand-logo);
+  fill: var(--base-brand-logo);
+}
+
+#sidebar-active,
+.open-sidebar-btn,
+.close-sidebar-btn {
+  display: none;
+}
+
+.hm-logo-container-hide {
+  display: none;
+}
+
+/* ---------SUB-NAVBAR----------- */
+
+.sub-navbar {
+  margin-bottom: 1rem;
+  width: 64%;
+  justify-self: flex-end;
+}
+
+.sub-navbar ul {
+  display: flex;
+}
+
+.sub-navbar li {
+  padding: 0 0.9375rem;
+  margin: 1.125rem 0 0;
+  font-weight: 500;
+}
+
+.sub-navbar a:hover {
+  border-bottom: 1px solid #222222;
+}
+
+.search-icon-btn {
+  border: none;
+  padding-bottom: 8px;
+  background: var(--base-background-default);
+  font-family: inherit;
+  font-size: 0.873rem;
+  font-weight: 100;
+  margin-left: 3px;
+}
+
+.search-icon-btn::placeholder {
+  color: #222222;
+}
+
+.search-icon-btn:focus {
+  outline: none;
+}
+
+.search-btn-container {
+  width: 20%;
+  display: flex;
+  border-bottom: 1px solid #222222;
+  cursor: pointer;
+}
+
+.hide-search-icon {
+  display: none;
+}
+
+/* BANNERS */
+
+/* DELIVERY DETAILS BANNER*/
+
+.delivery-details-banner .container {
+  background-color: var(--base-background-default);
+  margin-bottom: 1.25rem;
+  padding: 0 4.125rem;
+}
+.delivery-details-banner li {
+  padding: 0.5rem;
+}
+
+/*SALES BANNER */
+
+.sales-banner .container div {
+  /* background-color: #c90006; */
+  background-image: url(https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/global_campaigns/season_00/divided/1050/1050-3x1-Banner--wicked-x-hm.jpg]&scale=size[960]&sink=format[jpeg],quality[80]);
+  color: var(--base-primary-reverse-text);
+}
+
+.sales-banner .flex {
+  justify-content: center;
+}
+
+.sales-banner li {
+  margin: 1.375rem 0.25rem 1.875rem;
+}
+
+.sales-banner a {
+  color: #222222;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 8px;
+  font-weight: 600;
+}
+.sales-banner a:hover {
+  background-color: var(--base-background-row-hover);
+}
+
+/*  KIDS SALE BANNER */
+
+.kids-sale-banner .container div {
+  background-color: #4a6870;
+}
+
+/* HOME DECOR SALE BANNER */
+
+.home-decor-sale-banner .container div {
+  background-image: url(https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/global_campaigns/season_09/move/7139a/7139A-banner-3x1.jpg]&scale=size[960]&sink=format[jpeg],quality[80]);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.98);
+}
+
+.home-decor-sale-banner .banner-btn {
+  background-color: #fff;
+  color: #222222;
+  font-weight: 600;
+}
+.home-decor-sale-banner .banner-btn:hover {
+  background-color: var(--base-background-row-hover);
+  color: #222222;
+}
+
+.kids-sale-banner .container div,
+.home-decor-sale-banner .container div {
+  padding-bottom: 0.5rem;
+  color: var(--base-primary-reverse-text);
+}
+
+.sales-banner,
+.kids-sale-banner,
+.home-decor-sale-banner {
+  margin-bottom: 1.5rem;
+}
+
+.sales-banner h4,
+.kids-sale-banner h4,
+.home-decor-sale-banner h4 {
+  padding: 1.375rem 3.75rem 0;
+  font-weight: 400;
+}
+
+.sales-banner p,
+.kids-sale-banner p,
+.home-decor-sale-banner p {
+  padding: 0.5rem 3.75rem 0;
+}
+
+.banner-btn {
+  background-color: transparent;
+  color: #fff;
+  padding: 0.3rem 0px;
+  border: 1px solid #fff;
+  text-align: center;
+  font-weight: 500;
+  display: block;
+  margin: 1em auto;
+  width: 12%;
+}
+.banner-btn:hover {
+  color: var(--base-background-row-hover);
+}
+
+.article img {
+  width: 150px;
+  height: 150px;
+}
+
+/* ----HOME PAGE PRODUCTS IMAGES--------- */
+
+.home-page-products-container img {
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+}
+
+.home-page-products-container {
+  color: var(--base-primary-reverse-text);
+}
+
+.home-page-products-container h2 {
+  font-size: 2.6rem;
+}
+
+.shop-now-btn {
+  background-color: #fff;
+  color: var(--base-text);
+  padding: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.shop-now-btn:hover {
+  background-color: var(--base-background-row-hover);
+}
+
+.denim-collection-homepg,
+.mens-collection-homepg,
+.kids-collection-homepg,
+.preppy-collection-homepg {
+  position: relative;
+}
+
+.denim-collection-homepg-details h2,
+.kids-collection-homepg-details h2,
+.preppy-collection-homepg-details h2 {
+  margin-bottom: 1.6rem;
+}
+
+.denim-collection-homepg-details {
+  position: absolute;
+  top: 38%;
+  left: 4%;
+}
+
+.mens-collection-homepg-details {
+  position: absolute;
+  left: 4%;
+  bottom: 13%;
+}
+
+.mens-collection-homepg-details h2 {
+  letter-spacing: 1.2px;
+}
+
+.mens-collection-homepg-details p {
+  margin-bottom: 1.875rem;
+  font-size: 0.875rem;
+}
+.mens-collection-homepg-pricing-details {
+  position: absolute;
+  top: 60%;
+  right: 13%;
+  background-color: #222222;
+  padding: 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+.mens-collection-homepg-pricing-details h4 {
+  font-weight: 100;
+}
+
+.mens-collection-homepg-pricing-details span > svg,
+.kids-collection-homepg-pricing-details span > svg {
+  width: 14px;
+  height: 14px;
+  color: #fff;
+  fill: currentColor;
+  margin: 2px 0 0;
+}
+
+.kids-collection-homepg-details {
+  text-align: center;
+  position: absolute;
+  bottom: 20%;
+  left: 37%;
+}
+
+.kids-collection-homepg-pricing-details {
+  position: absolute;
+  top: 42%;
+  left: 59%;
+  background-color: #222222;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.preppy-collection-homepg-details {
+  position: absolute;
+  top: 38%;
+  left: 4%;
+}
+
+/* --------FOOTER------------ */
+
+.footer {
+  background-color: var(--base-background-footer);
+  color: var(--base-text);
+  padding: 4rem 2rem;
+}
+
+.footer .container h5 {
+  font-size: 0.8125rem;
+  margin-bottom: 1rem;
+  line-height: 15px;
+}
+
+.footer .container li {
+  font-size: 0.6875rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer .container .Shop a:hover,
+.corporate-info a:hover,
+.help a:hover {
+  /* border-bottom: 1px solid #222222; */
+  text-decoration: underline;
+}
+
+.sign-up-info h5 {
+  padding-top: 1.5rem;
+  font-weight: 400;
+}
+
+.footer-read-btn a {
+  text-decoration: underline;
+}
+
+.sign-up-info a:hover {
+  color: var(--footer-hover);
+}
+
+.footer-read-btn svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+  color: black;
+  fill: currentColor;
+}
+
+.social-icons .flex {
+  justify-content: center;
+}
+
+.social-icons .container a {
+  margin: 1rem 0.5rem;
+}
+
+.footer-hm-logo {
+  width: 39px;
+  height: 26px;
+  color: var(--base-brand-logo);
+  fill: currentColor;
+  margin: 1.2rem 0;
+}
+
+.location-btn {
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding: 0.4rem 0;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222222;
+}
+.location-btn:hover {
+  color: var(--footer-hover);
+}
+
+
+
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .delivery-details-banner li:nth-child(2),
+  .delivery-details-banner li:nth-child(3) {
+    display: none;
+  }
+
+  .delivery-details-banner .container {
+    justify-content: center;
+  }
+
+  .home-page-products-container h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .left-nav-items {
+    display: none;
+  }
+
+  .sidebar-menu-icon-svg,
+  .sidebar-close-icon-svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .open-sidebar-btn,
+  .close-sidebar-btn {
+    display: block;
+  }
+
+  .flex-small-screen {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .hm-logo-container {
+    display: none;
+  }
+
+  .hm-logo-container-hide {
+    display: block;
+  }
+
+  .nav-hm-logo {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .right-nav-items li:last-of-type {
+    margin-right: 0.5rem;
+  }
+
+  .right-nav-items-text {
+    display: none;
+  }
+
+  .hide-search-icon {
+    display: block;
+  }
+  .header .sub-navbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .sub-navbar li {
+    padding: 0 0.5rem;
+  }
+}
