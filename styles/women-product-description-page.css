@@ -39,11 +39,14 @@
 .description-page {
     padding: 1rem 2rem;
     color: var(--base-text);
+    margin-bottom: 10rem;
+
 }
 .product-description-page-flex {
     display: flex;
     align-items: start;
     width: 100%;
+    padding-bottom: 2rem;
 
 }
 
@@ -62,11 +65,13 @@
     width: 100%;
     font-size: 0.75rem;
     padding: 20px 0 20px 28px;
-    
-
+    position: sticky;
+    top: 1rem;
 }
-
-/* NAME AND PRICE DETAILS CSS */
+.product-description-container .flex {
+    align-items: start;
+}
+/* NAME AND PRICE DETAILS  */
 
 .product-name-price h1{
     font-size: 1rem;
@@ -97,7 +102,7 @@
 }
 
 
-/* PRODUCT COLOR ARTICLES */
+/* PRODUCT COLOR ARTICLES SECTION */
 
 .product-article .flex {
     justify-content: start;
@@ -114,7 +119,7 @@
     border: 1px solid #222;
 }
 
-/* SIZES DETAILS CSS */
+/* SIZES DETAILS SECTION */
 
 .product-size-details-container h3 {
     font-size: 0.8rem;
@@ -160,7 +165,7 @@
     height: 1rem;
 }
 
-/* DELIVERY DETAILS  */
+/* DELIVERY SECTION  */
 
 .regular-btn {
     background-color: transparent;
@@ -192,7 +197,7 @@
 }
 
 
-/* Review details  */
+/* REVIEW SECTION  */
 
 .review-information {
     margin: 2rem 0 1rem;
@@ -221,24 +226,36 @@
     top: 50%;
 }
 
-/* DESCRIPTION AND FIT DETAILS CSS */
+/* DESCRIPTION TEXT DETAILS TAG */
+
+.bold {
+    font-weight: 600;
+}
+
+.light-text {
+    color: var(--base-light-text-color);
+}
 
 summary {
     list-style-type: none;
     font-size: 1rem;
-    /* border-top: 1px solid var(--base-border-color) ;
-    border-bottom: 1px solid var(--base-border-color) ; */
     padding: 0.8rem 1rem;
     font-weight: 600;
     cursor: pointer;
 }
-
 summary:hover {
     color: var(--base-secondary-interactive-hover);
 }
+
 details {
     border-top: 1px solid var(--base-border-color) ;
 }
+
+details[open] summary {
+    color: var(--base-secondary-interactive-active);
+}
+
+/* DESCRIPTION AND FIT  */
 
 .description-and-fit-details p {
     line-height: 2;
@@ -248,9 +265,71 @@ details {
     margin: 1rem 0 2.5rem;
 }
 
-.bold {
-    font-weight: 600;
+.description-and-fit-details p:last-of-type {
+    margin-bottom: 1.5rem;
 }
+
+/* MATERIAL DETAILS  TAG */
+
+.material-details div h3 {
+    font-size: 1rem;
+    margin: 1rem 0 0.5rem;
+
+}
+
+.composition-div,
+.additional-details-div,
+.material-used-details {
+    padding: 0 1rem;
+}
+
+
+.additional-details-div li {
+    list-style: disc;
+    list-style-position: inside;
+    margin-bottom: 1rem;
+}
+
+.additional-details-div p:first-of-type {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.additional-details-div .material-text {
+    margin: 0 0 0.5rem;
+    line-height: 1.5;
+}
+
+.additional-details-div p:last-of-type {
+    margin: 1rem 0;
+}
+
+.material-used-details div {
+    margin-bottom: 1.5rem;
+}
+
+.material-used-details  h4 {
+    margin: 0.5rem 0
+
+}
+
+.supplier-info-btn {
+    
+    background-color: #fff;
+    width: 100%;
+    padding: 8px 24px;
+    font-size: 1rem;
+    margin: 1rem 0 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+
+}
+
+.supplier-info-btn:hover {
+    background-color: #e6e6e6;
+}
+
+/* CARE GUIDE DETAILS TAG */
 
 .care-guide-details p {
     padding: 0 1rem;
@@ -267,4 +346,76 @@ details {
 }
 
 
+/* OTHER RELATED PRODUCT SECTION */
 
+.other-related-product-container {
+    margin: 10rem 10rem 2rem;
+}
+
+.other-related-product-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.other-related-product-container
+.other-product-container-flex {
+    display: flex;
+}
+
+/* FIGURE */
+
+.other-related-product-container figure img {
+    width: 278px;
+    height: 420px;
+}
+
+.other-related-product-container figure {
+    position: relative;
+}
+
+/* HEART SVG - ADD TO FAV */
+.other-related-product-container .add-to-fav-btn {
+    position: absolute;
+    bottom: 12%;
+    right: 7%;
+}
+
+/* FIGCAPTION */
+.other-related-product-container figcaption p{
+    font-size: 0.8125rem;
+}
+.other-product-price {
+    color: var(--base-secondary-interactive-active);
+    font-size: 0.8125rem;;
+}
+
+.other-related-product-container figcaption span:last-of-type {
+    text-decoration: line-through;
+}
+
+/* TRENDING CLOTHES BUTTON  */
+
+.trending-clothes-btn-container {
+    margin: 1rem auto 5rem;
+    width: 95%;
+}
+
+.trending-clothes-btn-container h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.trending-clothes-btn {
+    padding: 0.60rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid #222222;
+    margin: 0 0.1rem;
+}
+
+.trending-clothes-btn:hover{
+    background-color: var(--base-secondary-interactive-hover);
+    color: var(--base-primary-reverse-text);
+    text-decoration: underline;
+}
