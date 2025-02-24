@@ -236,7 +236,7 @@ a {
   font-weight: 500;
   display: block;
   margin: 1em auto;
-  width: 12%;
+  width: 16%;
 }
 .banner-btn:hover {
   color: var(--base-background-row-hover);
@@ -316,7 +316,8 @@ a {
   font-size: 1rem;
   border-radius: 4px;
 }
-.mens-collection-homepg-pricing-details h4 {
+.mens-collection-homepg-pricing-details h4,
+.kids-collection-homepg-pricing-details h4 {
   font-weight: 100;
 }
 
@@ -430,17 +431,98 @@ a {
   color: var(--footer-hover);
 }
 
-
-
-
-
 /* MEDIA QUERY */
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+
+  /* DELIVERY DETAILS BANNER */
+  .delivery-details-banner li:nth-child(2),
+  .delivery-details-banner li:nth-child(3) {
+    display: none;
+  }
+
+  .delivery-details-banner li:nth-child(1) {
+    padding: 0;
+  }
+
+  .delivery-details-banner .container {
+    justify-content: center;
+  }
+
+  /* SALES BANNER */
+  .sales-banner .flex {
+    display: none;
+  }
+
+  .sales-banner .container p {
+    padding-bottom: 0.5rem;
+  }
+
+  /* BANNER BUTTON*/
+
+  .banner-btn {
+    width: 28%;
+    padding: 0.3rem 0;
+
+  }
+  /* HOME PAGE PRODUCTS IMAGES AND DETAILS */
+
+  .home-page-products-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .denim-collection-homepg-details,
+  .mens-collection-homepg-details,
+  .preppy-collection-homepg-details {
+    margin-left: 0.5rem;
+  } 
+
+  .shop-now-btn {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .denim-collection-homepg-details h2,
+  .kids-collection-homepg-details h2,
+  .preppy-collection-homepg-details h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .mens-collection-homepg-details p {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .mens-collection-homepg-details {
+    top: 37%;
+  }
+
+  .mens-collection-homepg-pricing-details {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    top: 10%;
+    right: 7%;
+  }
+
+  .mens-collection-homepg-pricing-details span > svg,
+  .kids-collection-homepg-pricing-details span > svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .kids-collection-homepg-pricing-details {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    top: 10%;
+    right: 7%;
+
+  }
+  
 }
 
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  /* DELIVERY DETAILS BANNER */
   .delivery-details-banner li:nth-child(2),
   .delivery-details-banner li:nth-child(3) {
     display: none;
@@ -450,13 +532,40 @@ a {
     justify-content: center;
   }
 
+  /* HOME PAGE PRODUCTS */
+
   .home-page-products-container h2 {
     font-size: 2rem;
   }
+
+  .denim-collection-homepg-details,
+  .mens-collection-homepg-details,
+  .preppy-collection-homepg-details {
+    margin-left: 1rem;
+  } 
+  .mens-collection-homepg-pricing-details {
+    padding: 1rem;
+    font-size: 1rem;
+    top: 10%;
+    right: 7%;
+  }
+
+  .kids-collection-homepg-pricing-details {
+    padding: 1rem;
+    font-size: 0.88rem;
+    top: 10%;
+    right: 7%;
+
+  }
+ 
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1000px) {
 }
+
+
+
 
 @media screen and (max-width: 1000px) {
   .header {
