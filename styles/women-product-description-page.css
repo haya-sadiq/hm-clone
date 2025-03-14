@@ -54,13 +54,12 @@ input {
 .product-flex {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .product-image-container img {
   width: 49%;
   height: auto;
-  margin: 0.1rem ;
+  margin: 0.1rem;
 }
 
 /* PRODUCT DESCRIPTION CONTAINER  */
@@ -342,54 +341,64 @@ details[open] summary {
   list-style-position: inside;
 }
 
-
-
-@media screen and (max-width:1279px) {
-    .product-image-container img:nth-child(1) {
-        width: 100%;
-    }
-    .product-image-container img:nth-child(4) {
-        width: 100%;
-    }
+.small-screen-product-img-des-container {
+  display: none;
 }
 
-@media screen and (min-width: 769px) and (max-width:1279px) {
+@media screen and (max-width: 1279px) {
+  .product-image-container img:nth-child(1) {
+    width: 100%;
+  }
+  .product-image-container img:nth-child(4) {
+    width: 100%;
+  }
+}
 
-    .product-description-grid {
-        grid-template-columns: 60% 40%;
-    }
-    
-    .add-to-cart-btn {
-        margin-bottom: 1rem;
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .product-description-grid {
+    grid-template-columns: 60% 40%;
+  }
 
-    }
-
+  .add-to-cart-btn {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .product-description-grid {
-        grid-template-columns: 1fr;
-    }
-    
+
+  .hide-small-screen {
+    display: none;
+  }
+  .product-description-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-image-container img:nth-child(2) {
+    width: 48%;
+  }
+  .product-image-container img:nth-child(3) {
+    width: 48%;
+  }
+  .product-image-container img:nth-child(5) {
+    width: 48%;
+  }
+  .product-image-container img:nth-child(6) {
+    width: 48%;
+  }
+
+  .small-screen-product-img-des-container {
+    display: block;
+  }
+
+  .product-description-container {
+    padding: 0;
+  }
+
+  .review-bar-container {
+    margin-bottom: 3rem;
+  }
+
+  summary{
+    padding: 0.8rem 0;
+  }
+
 }
-
-
-@media screen and (max-width: 768px) {
-    .product-image-container img:nth-child(2) {
-        width: 48%;
-    }
-    .product-image-container img:nth-child(3) {
-        width: 48%;
-    }
-    .product-image-container img:nth-child(5) {
-        width: 48%;
-    }
-    .product-image-container img:nth-child(6) {
-        width: 48%;
-    }
-    
-    
-
-
-}
-
